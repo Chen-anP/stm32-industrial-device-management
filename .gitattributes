@@ -1,0 +1,13 @@
+# Normalize text in Git without changing source encodings.
+* text=auto
+.gitignore text eol=lf
+.gitattributes text eol=lf
+*.md text eol=lf
+*.uvprojx text eol=crlf
+*.ioc text eol=crlf
+*.sct text eol=crlf
+
+# Prebuilt SDK libraries and images are binary assets, not generated objects.
+*.a binary
+*.lib binary
+*.png binary
